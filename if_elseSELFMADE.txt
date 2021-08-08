@@ -1,0 +1,24 @@
+if classes[index] == 'Top':
+    bottom = os.listdir('new_data/bottoms/')
+    shoes = os.listdir('new_data/formal_shoes/')
+    for i in range(3):
+        img1 = random.choice(bottom)
+        image1 = Image.open('new_data/bottoms/'+img1)
+        image1.show()
+
+    for i in range(2):
+        img1 = random.choice(shoes)
+        image1 = Image.open('new_data/formal_shoes/' + img1)
+        image1.show()
+
+            
+
+
+
+im = Image.open("img1.jpg")
+    im = im.resize((350,500))
+    data = io.BytesIO()
+    im.save(data, "JPEG")
+    encoded_img_data = base64.b64encode(data.getvalue())
+
+    return render_template("recommendations.html", img_data=encoded_img_data.decode('utf-8'))

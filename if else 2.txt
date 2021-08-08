@@ -1,0 +1,800 @@
+if classes[index] == 'Top':
+    bottom = os.listdir('new_data/bottoms/')
+    shoes = os.listdir('new_data/formal_shoes/')
+    for i in range(3):
+        img1 = random.choice(bottom)
+        image1 = Image.open('new_data/bottoms/'+img1)
+        image1.show()
+
+    for i in range(2):
+        img1 = random.choice(shoes)
+        image1 = Image.open('new_data/formal_shoes/' + img1)
+        image1.show()
+
+     if gender=='male' and color=='dark' and classP=='Top':
+        j=int(0)
+        clothpath='ImageRetrieve/MEN/Light/Bottom'
+        shoespath='ImageRetrieve/MEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='male' and color=='dark' and classP=='Bottom':
+        j=int(0)
+        clothpath='ImageRetrieve/MEN/Light/Top'
+        shoespath='ImageRetrieve/MEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='male' and color=='dark':
+        if classP=='Sports Shoes' or classP=='Formal Shoes':
+            j=int(0)
+            clothpath='ImageRetrieve/MEN/Dark/Top'
+            shoespath='ImageRetrieve/MEN/Light/Bottom'
+            bottom = os.listdir(clothpath)
+            shoes = os.listdir(shoespath)
+            for i in range(3):
+                img1 = random.choice(bottom)
+                image1 = Image.open(clothpath+'/'+img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+            for i in range(2):
+                img1 = random.choice(shoes)
+                image1 = Image.open(shoespath + '/' + img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+    elif gender=='male' and color=='light':
+        if classP=='Sports Shoes' or classP=='Formal Shoes':
+            j=int(0)
+            clothpath='ImageRetrieve/MEN/Light/Top'
+            shoespath='ImageRetrieve/MEN/Dark/Bottom'
+            bottom = os.listdir(clothpath)
+            shoes = os.listdir(shoespath)
+            for i in range(3):
+                img1 = random.choice(bottom)
+                image1 = Image.open(clothpath+'/'+img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+            for i in range(2):
+                img1 = random.choice(shoes)
+                image1 = Image.open(shoespath + '/' + img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+    elif gender=='male' and color=='light' and classP=='Bottom':
+        j=int(0)
+        clothpath='ImageRetrieve/MEN/Dark/Top'
+        shoespath='ImageRetrieve/MEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='male' and color=='light' and classP=='Top':
+        j=int(0)
+        clothpath='ImageRetrieve/MEN/Dark/Bottom'
+        shoespath='ImageRetrieve/MEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='female' and color=='dark' and classP=='Bottom':
+        j=int(0)
+        clothpath='ImageRetrieve/WOMEN/Light/Top'
+        shoespath='ImageRetrieve/WOMEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='female' and color=='dark' and classP=='Top':
+        j=int(0)
+        clothpath='ImageRetrieve/WOMEN/Light/Bottom'
+        shoespath='ImageRetrieve/WOMEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='female' and color=='dark' and classP=='Full Dress':
+        j=int(0)
+        clothpath='ImageRetrieve/WOMEN/Dress'
+        shoespath='ImageRetrieve/WOMEN/Heels'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='female' and color=='dark':
+        if classP=='Sports Shoes':
+            j=int(0)
+            clothpath='ImageRetrieve/WOMEN/Dark/Top'
+            shoespath='ImageRetrieve/WOMEN/Light/Bottom'
+            bottom = os.listdir(clothpath)
+            shoes = os.listdir(shoespath)
+            for i in range(3):
+                img1 = random.choice(bottom)
+                image1 = Image.open(clothpath+'/'+img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+            for i in range(2):
+                img1 = random.choice(shoes)
+                image1 = Image.open(shoespath + '/' + img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+        
+        elif classP=='Heel Sandals':
+            j=int(0)
+            clothpath='ImageRetrieve/WOMEN/Dress'
+            shoespath='ImageRetrieve/WOMEN/Dark/Bottom'
+            bottom = os.listdir(clothpath)
+            shoes = os.listdir(shoespath)
+            for i in range(3):
+                img1 = random.choice(bottom)
+                image1 = Image.open(clothpath+'/'+img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+            for i in range(2):
+                img1 = random.choice(shoes)
+                image1 = Image.open(shoespath + '/' + img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+    elif gender=='female' and color=='light' and classP=='Bottom':
+        j=int(0)
+        clothpath='ImageRetrieve/WOMEN/Dark/Top'
+        shoespath='ImageRetrieve/WOMEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='female' and color=='light' and classP=='Top':
+        j=int(0)
+        clothpath='ImageRetrieve/WOMEN/Dark/Bottom'
+        shoespath='ImageRetrieve/WOMEN/Shoes'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='female' and color=='light' and classP=='Full Dress':
+        j=int(0)
+        clothpath='ImageRetrieve/WOMEN/Dress'
+        shoespath='ImageRetrieve/WOMEN/Heels'
+        bottom = os.listdir(clothpath)
+        shoes = os.listdir(shoespath)
+        for i in range(3):
+            img1 = random.choice(bottom)
+            image1 = Image.open(clothpath+'/'+img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+        for i in range(2):
+            img1 = random.choice(shoes)
+            image1 = Image.open(shoespath + '/' + img1)
+            image1 = image1.resize((400,500))
+            data = io.BytesIO()
+            image1.save(data, "JPEG")
+            img.append(base64.b64encode(data.getvalue()))
+            j=j+1
+
+    elif gender=='female' and color=='light':
+        if classP=='Sports Shoes':
+            j=int(0)
+            clothpath='ImageRetrieve/WOMEN/Light/Top'
+            shoespath='ImageRetrieve/WOMEN/Dark/Bottom'
+            bottom = os.listdir(clothpath)
+            shoes = os.listdir(shoespath)
+            for i in range(3):
+                img1 = random.choice(bottom)
+                image1 = Image.open(clothpath+'/'+img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+            for i in range(2):
+                img1 = random.choice(shoes)
+                image1 = Image.open(shoespath + '/' + img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+        
+        elif classP=='Heel Sandals':
+            j=int(0)
+            clothpath='ImageRetrieve/WOMEN/Dress'
+            shoespath='ImageRetrieve/WOMEN/Dark/Bottom'
+            bottom = os.listdir(clothpath)
+            shoes = os.listdir(shoespath)
+            for i in range(3):
+                img1 = random.choice(bottom)
+                image1 = Image.open(clothpath+'/'+img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+            for i in range(2):
+                img1 = random.choice(shoes)
+                image1 = Image.open(shoespath + img1)
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                img.append(base64.b64encode(data.getvalue()))
+                j=j+1
+
+    else :
+        image1 = Image.open('ImageRetrieve/image1.jpg')
+        image1 = image1.resize((400,500))
+        data = io.BytesIO()
+        image1.save(data, "JPEG")
+        for i in range(5):
+            img.append(base64.b64encode(data.getvalue()))
+
+    img1 = img[0]
+    img2 = img[1]
+    img3 = img[2]
+    img4 = img[3]
+    img5 = img[4]    
+       
+
+    if gender=='male':
+        if color=='light':
+            if classP=='Top':
+                clothpath='ImageRetrieve/MEN/Dark/Bottom'
+                shoespath='ImageRetrieve/MEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Bottom':
+                clothpath='ImageRetrieve/MEN/Dark/Top'
+                shoespath='ImageRetrieve/MEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Sport Shoes' or classP=='Formal Shoes':
+                clothpath='ImageRetrieve/MEN/Light/Top'
+                shoespath='ImageRetrieve/MEN/Dark/Bottom'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            else :
+                image1 = Image.open('ImageRetrieve/image1.jpg')
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                for i in range(5):
+                    img.append(base64.b64encode(data.getvalue()))
+
+        
+        if color=='dark':
+            if classP=='Top':
+                clothpath='ImageRetrieve/MEN/Light/Bottom'
+                shoespath='ImageRetrieve/MEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Bottom':
+                clothpath='ImageRetrieve/MEN/Light/Top'
+                shoespath='ImageRetrieve/MEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Sport Shoes' or classP=='Formal Shoes':
+                clothpath='ImageRetrieve/MEN/Light/Top'
+                shoespath='ImageRetrieve/MEN/Dark/Bottom'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            else :
+                image1 = Image.open('ImageRetrieve/image1.jpg')
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                for i in range(5):
+                    img.append(base64.b64encode(data.getvalue()))
+
+    elif gender=='female':
+        if color=='light':
+            if classP=='Top':
+                clothpath='ImageRetrieve/WOMEN/Dark/Bottom'
+                shoespath='ImageRetrieve/WOMEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Bottom':
+                clothpath='ImageRetrieve/WOMEN/Dark/Top'
+                shoespath='ImageRetrieve/WOMEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Sport Shoes':
+                clothpath='ImageRetrieve/WOMEN/Light/Top'
+                shoespath='ImageRetrieve/WOMEN/Dark/Bottom'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Heel sandals'
+                clothpath='ImageRetrieve/WOMEN/Dress'
+                shoespath='ImageRetrieve/WOMEN/Dark/Bottom'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath+ '/'+ img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Full Dress'
+                clothpath='ImageRetrieve/WOMEN/Dress'
+                shoespath='ImageRetrieve/WOMEN/Heels'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            else :
+                image1 = Image.open('ImageRetrieve/image1.jpg')
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                for i in range(5):
+                    img.append(base64.b64encode(data.getvalue()))
+
+        if color=='dark':
+            if classP=='Top':
+                clothpath='ImageRetrieve/WOMEN/Light/Bottom'
+                shoespath='ImageRetrieve/WOMEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Bottom':
+                clothpath='ImageRetrieve/WOMEN/Light/Top'
+                shoespath='ImageRetrieve/WOMEN/Shoes'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Sport Shoes':
+                clothpath='ImageRetrieve/WOMEN/Light/Top'
+                shoespath='ImageRetrieve/WOMEN/Dark/Bottom'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Heel sandals'
+                clothpath='ImageRetrieve/WOMEN/Dress'
+                shoespath='ImageRetrieve/WOMEN/Dark/Bottom'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath+ '/'+ img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            elif classP=='Full Dress'
+                clothpath='ImageRetrieve/WOMEN/Dress'
+                shoespath='ImageRetrieve/WOMEN/Heels'
+                bottom = os.listdir(clothpath)
+                shoes = os.listdir(shoespath)
+                for i in range(3):
+                    img1 = random.choice(bottom)
+                    image1 = Image.open(clothpath+'/'+img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+                    j=j+1
+
+                for i in range(2):
+                    img1 = random.choice(shoes)
+                    image1 = Image.open(shoespath + '/' + img1)
+                    image1 = image1.resize((400,500))
+                    data = io.BytesIO()
+                    image1.save(data, "JPEG")
+                    img.append(base64.b64encode(data.getvalue()))
+
+            else :
+                image1 = Image.open('ImageRetrieve/image1.jpg')
+                image1 = image1.resize((400,500))
+                data = io.BytesIO()
+                image1.save(data, "JPEG")
+                for i in range(5):
+                    img.append(base64.b64encode(data.getvalue()))
+            
+            
+
+        
+
+            
+
+
+im = Image.open("img1.jpg")
+    im = im.resize((350,500))
+    data = io.BytesIO()
+    im.save(data, "JPEG")
+    encoded_img_data = base64.b64encode(data.getvalue())
+
+    return render_template("recommendations.html", img_data=encoded_img_data.decode('utf-8'))
+
+<a href="{{ url_for('classification') }}" class="nav-link">Classification</a>
